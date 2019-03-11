@@ -4,6 +4,7 @@ myHeading.textContent = "hello world!";
 var g_chg = false
 
 document.querySelector('img').onclick = function() {
+    global g_chg;
     if (!g_chg) {
         document.querySelector("img").attributes["src"].nodeValue = "images/test2.jpg"
         g_chg = !g_chg
